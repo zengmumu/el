@@ -1,0 +1,761 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>遍历数组 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="打印数组.html" />
+    
+    
+    <link rel="prev" href="PHP 数组 Array.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">php基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="PHP概述.html">
+            
+                <a href="PHP概述.html">
+            
+                    
+                    PHP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="PHP 开发环境安装.html">
+            
+                <a href="PHP 开发环境安装.html">
+            
+                    
+                    PHP 开发环境的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    基本语法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="PHP 基本语法.html">
+            
+                <a href="PHP 基本语法.html">
+            
+                    
+                    基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="php变量.html">
+            
+                <a href="php变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="PHP 字符串输出.html">
+            
+                <a href="PHP 字符串输出.html">
+            
+                    
+                    字符串输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="PHP 注释.html">
+            
+                <a href="PHP 注释.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="PHP 运算符.html">
+            
+                <a href="PHP 运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="PHP 表达式.html">
+            
+                <a href="PHP 表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    分支与循环
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="PHP 流程控制.html">
+            
+                <a href="PHP 流程控制.html">
+            
+                    
+                    分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="php循环.html">
+            
+                <a href="php循环.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="PHP 函数 function.html">
+            
+                <a href="PHP 函数 function.html">
+            
+                    
+                    函数function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    数组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="PHP 数组 Array.html">
+            
+                <a href="PHP 数组 Array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="遍历数组.html">
+            
+                <a href="遍历数组.html">
+            
+                    
+                    遍历数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="打印数组.html">
+            
+                <a href="打印数组.html">
+            
+                    
+                    打印数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="时间与日期.html">
+            
+                <a href="时间与日期.html">
+            
+                    
+                    日期与时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    表单与交互
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="HTML 表单.html">
+            
+                <a href="HTML 表单.html">
+            
+                    
+                    HTML表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="$_GET.html">
+            
+                <a href="$_GET.html">
+            
+                    
+                    GET
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="$_POST.html">
+            
+                <a href="$_POST.html">
+            
+                    
+                    POST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="session.html">
+            
+                <a href="session.html">
+            
+                    
+                    SESSION
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="文件上传.html">
+            
+                <a href="文件上传.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">php+mysql</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../php+mysql/sql基本概念.md">
+            
+                <span>
+            
+                    
+                    SQL基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../php+mysql/数据（字段）类型.md">
+            
+                <span>
+            
+                    
+                    数据(字段)类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../php+mysql/表字段属性.md">
+            
+                <span>
+            
+                    
+                    字段属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../php+mysql/MySQl增加和查询md">
+            
+                <span>
+            
+                    
+                    增加和查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../php+mysql/MySQL修改和删除.md">
+            
+                <span>
+            
+                    
+                    修改和删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../php+mysql/MySQL 连接与管理.md">
+            
+                <span>
+            
+                    
+                    MySQl连接与管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../php+mysql/mysql_query.md">
+            
+                <span>
+            
+                    
+                    mysql_query
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../php+mysql/mysql_fetch_assoc(">
+            
+                <span>
+            
+                    
+                    mysql_fetch_assoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >遍历数组</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="foreach">foreach()</h2>
+<p>PHP foreach() &#x8BED;&#x6CD5;&#x7ED3;&#x6784;&#x7528;&#x4E8E;&#x904D;&#x5386;&#x64CD;&#x4F5C;&#x6216;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#xFF0C;foreach()
+&#x4EC5;&#x80FD;&#x7528;&#x4E8E;&#x904D;&#x5386;&#x6570;&#x7EC4;&#x6216;&#x5BF9;&#x8C61;&#xFF0C;&#x5F53;&#x8BD5;&#x56FE;&#x5C06;&#x5176;&#x7528;&#x4E8E;&#x5176;&#x5B83;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x672A;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53D8;&#x91CF;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>foreach (array as $value)
+    statement
+// &#x6216;&#x8005;&#xFF1A;
+foreach (array as $key =&gt; $value)
+    statement
+</code></pre><p>&#x4E0A;&#x8FF0;&#x8BED;&#x6CD5;&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x5C06;&#x5F53;&#x524D;&#x5355;&#x5143;&#x7684;&#x503C;&#x8D4B;&#x7ED9; $value &#x5E76;&#x4E14;&#x6570;&#x7EC4;&#x5185;&#x90E8;&#x7684;&#x6307;&#x9488;&#x5411;&#x524D;&#x79FB;&#x4E00;&#x6B65;&#x3002;&#x5728;&#x7B2C;&#x4E8C;&#x79CD;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#x4E2D;&#x8FD8;&#x5C06;&#x5F53;&#x524D;&#x5355;&#x5143;&#x7684;&#x952E;&#x540D;&#x4E5F;&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x4E2D;&#x8D4B;&#x7ED9;&#x53D8;&#x91CF; $key&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>&lt;?php
+$arr_age = array(&quot;wang&quot;=&gt;18, &quot;li&quot;=&gt;20, &quot;zhang&quot;=&gt;25);
+foreach ($arr_age as $age) {
+    echo $age,&apos;&lt;br /&gt;&apos;;
+}
+?&gt;
+</code></pre><p>&#x8FD0;&#x884C;&#x8BE5;&#x4F8B;&#x5B50;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>18
+20
+25
+</code></pre><h3 id="&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x952E;&#x503C;">&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x952E;&#x503C;</h3>
+<pre><code>&lt;?php
+$arr_age = array(&quot;wang&quot;=&gt;18, &quot;li&quot;=&gt;20, &quot;zhang&quot;=&gt;25);
+foreach ($arr_age as $key=&gt;$age) {
+    echo $key,&apos;: &apos;,$age,&apos;&lt;br /&gt;&apos;;
+}
+?&gt;
+</code></pre><p>&#x8FD0;&#x884C;&#x4F8B;&#x5B50;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>wang: 18
+li: 20
+zhang: 25
+</code></pre><h3 id="&#x5F15;&#x7528;&#x7B26;&#x53F7;">&amp;&#x5F15;&#x7528;&#x7B26;&#x53F7;</h3>
+<pre><code>&lt;?php
+$arr_age = array(&quot;wang&quot;=&gt;18, &quot;li&quot;=&gt;20, &quot;zhang&quot;=&gt;25);
+// foreach ($arr_age as $age) {
+foreach ($arr_age as &amp;$age) {
+    $age = $age+10;
+    echo $age,&apos;&lt;br /&gt;&apos;;
+}
+// &#x8F93;&#x51FA;&#x539F;&#x6570;&#x7EC4;
+print_r($arr_age);
+?&gt;
+</code></pre><p>&#x8FD0;&#x884C;&#x4F8B;&#x5B50;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>28
+30
+35
+Array ( [wang] =&gt; 18 [li] =&gt; 20 [zhang] =&gt; 25 ) 
+</code></pre><p>&#x8981;&#x5728; foreach &#x4E2D;&#x4FEE;&#x6539;&#x539F;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F15;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x66F4;&#x6539;&#x4E3A;&#xFF1A;</p>
+<pre><code>&lt;?php
+$arr_age = array(&quot;wang&quot;=&gt;18, &quot;li&quot;=&gt;20, &quot;zhang&quot;=&gt;25);
+foreach ($arr_age as &amp;$age) {
+    $age = $age+10;
+    echo $age,&apos;&lt;br /&gt;&apos;;
+}
+// &#x8F93;&#x51FA;&#x539F;&#x6570;&#x7EC4;
+print_r($arr_age);
+?&gt;
+</code></pre><p>&#x8FD0;&#x884C;&#x4F8B;&#x5B50;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>18
+20
+25
+Array ( [wang] =&gt; 28 [li] =&gt; 30 [zhang] =&gt; 35 ) 
+</code></pre><h3 id="&#x5EF6;&#x4F38;&#x9884;&#x8BFB;">&#x5EF6;&#x4F38;&#x9884;&#x8BFB;</h3>
+<p>PHP &#x6570;&#x7EC4;&#x662F;&#x901A;&#x8FC7;&#x54C8;&#x5E0C;&#x8868;(HashTable)&#x8868;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x56E0;&#x6B64; foreach &#x904D;&#x5386;&#x6570;&#x7EC4;&#x65F6;&#x662F;&#x4F9D;&#x636E;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6765;&#x8FDB;&#x884C;&#x7684;&#x3002;&#x5982;&#x679C;&#x60F3;&#x6309;&#x7167;&#x7D22;&#x5F15;&#x5927;&#x5C0F;&#x904D;&#x5386;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;
+for() &#x5FAA;&#x73AF;&#x904D;&#x5386;&#x3002;</p>
+<h2 id="for-&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x6570;&#x7EC4;">for() &#x5FAA;&#x73AF;&#x904D;&#x5386;&#x6570;&#x7EC4;</h2>
+<p>&#x5982;&#x679C;&#x662F;&#x64CD;&#x4F5C; <strong>&#x8FDE;&#x7EED;&#x952E;&#x503C;</strong> &#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x91C7;&#x7528; for() &#x5FAA;&#x73AF;&#x6765;&#x904D;&#x5386;&#x6570;&#x7EC4;&#xFF1A;</p>
+<pre><code>&lt;?php
+$arr_age = array(18, 20, 25);
+$num = count($arr_age);
+for($i = 0; $i &lt; $num; $i++){
+    echo $arr_age[$i].&quot;&lt;br /&gt;&quot;;
+}
+?&gt;
+</code></pre><p>&#x8FD0;&#x884C;&#x4F8B;&#x5B50;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>18
+20
+25
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="PHP 数组 Array.html" class="navigation navigation-prev " aria-label="Previous page: 数组">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="打印数组.html" class="navigation navigation-next " aria-label="Next page: 打印数组">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"遍历数组","level":"1.7.2","depth":2,"next":{"title":"打印数组","level":"1.7.3","depth":2,"path":"php/打印数组.md","ref":"php/打印数组.md","articles":[]},"previous":{"title":"数组","level":"1.7.1","depth":2,"path":"php/PHP 数组 Array.md","ref":"php/PHP 数组 Array.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"php/遍历数组.md","mtime":"2019-12-11T09:55:10.019Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T05:10:28.790Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
